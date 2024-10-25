@@ -1,0 +1,23 @@
+th {
+    border: none;
+    padding: 8px;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+
+td {
+    border: none;
+    padding: 8px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+th {
+    color: #000;
+    background: linear-gradient(180deg, #000000, #cfbd97);
+    text-align: center;
+}
+
+tr:hover {
+    background-color:#cfbd97           
+}

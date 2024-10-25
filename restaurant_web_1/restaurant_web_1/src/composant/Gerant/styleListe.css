@@ -1,0 +1,23 @@
+th.sty {
+    border: none;
+    padding: 8px;
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+
+td.sty {
+    border: none;
+    padding: 8px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+th.sty {
+    color: #ffffff;
+    background: linear-gradient(180deg, #000000, #cfbd97);
+    text-align: center;
+}
+
+tr:hover.sty {
+    background-color:#cfbd97           
+}
