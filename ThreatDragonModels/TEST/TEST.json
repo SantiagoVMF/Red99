@@ -28,8 +28,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "120142bd-914b-469f-85e1-0e954a584355",
             "zIndex": -1,
+            "id": "120142bd-914b-469f-85e1-0e954a584355",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -56,13 +56,14 @@
             },
             "attrs": {
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -146,7 +147,6 @@
               ]
             },
             "id": "fe26320f-9a18-46e8-bc55-49f5b81a8191",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
@@ -154,9 +154,34 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "aa7e3d4c-8529-4aae-bf95-06bb963021b2",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -180,6 +205,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -263,7 +289,6 @@
               ]
             },
             "id": "7983a230-b922-4f47-ae9b-88fb77e539f3",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Api Gateway",
@@ -303,6 +328,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -386,7 +412,6 @@
               ]
             },
             "id": "c589dec5-ab19-4f14-acc4-c1052eb8d486",
-            "zIndex": 3,
             "data": {
               "type": "tm.Store",
               "name": "BDD",
@@ -424,6 +449,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -520,8 +546,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 4
+            }
           },
           {
             "shape": "flow",
@@ -628,6 +653,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
